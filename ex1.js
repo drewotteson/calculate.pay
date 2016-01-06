@@ -22,12 +22,12 @@ function otPay(hours,wage) {
 }
 function evaluate(hours,wage) {
     if (hours > 40) {
-        otPay();
+        otPay(hours, wage);
     } else { 
-        calculatePay();
+        calculatePay(hours, wage);
     }
 }
-otPay(hours,wage);
+evaluate(hours,wage);
    
     
     
